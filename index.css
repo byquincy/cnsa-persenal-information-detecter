@@ -19,8 +19,9 @@ textarea {
     transition-property: box-shadow;
     transition-duration: 200ms;
 }
-textarea:hover {
+textarea:focus {
     box-shadow:  0px 0px 0px 0px rgba(0,0,0,0.2);
+    outline: none;
 }
 
 button {
