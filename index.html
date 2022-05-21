@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사회 블록 시연</title>
+
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        @media (orientation: portrait) {
+            body {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #blog-container {
+                margin: 0;
+            }
+            #subject {
+                width: 92vw;
+                margin: 4vw;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            #blog-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="Logo.svg" style="height: 100%">
+        </a>
+        
+        <nav>
+        </nav>
+    </header>
+    <div id="notice">
+        dfsfsdfsfs<br>dsfdfsdf<br>dfsfdsf
+    </div>
+
+    <div id="container">
+        <div id="input">
+            <textarea name="text-box" placeholder="게시글을 입력해주세요." required autofocus></textarea>
+            <button id="submit">제출</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js" />
+</body>
+</html>

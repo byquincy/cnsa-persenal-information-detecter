@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+
+    background-color: #e6e6eb;
+}
+body {
+    margin-top: calc(5vh + 4vw);
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+
+    background-color: #e6e6eb;
+    box-shadow: 20px 20px 60px #c4c4c8;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    z-index: 9999;
+}
+nav {
+    padding-left: 3vw;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+}

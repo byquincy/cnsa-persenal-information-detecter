@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 960" style="enable-background:new 0 0 960 960;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{display:inline;fill:#FFFFFF;}
+</style>
+<g id="오각형" class="st0">
+	<polygon class="st1" points="478.6,111 90.6,392.9 238.8,849 718.4,849 866.6,392.9 	"/>
+</g>
+<g id="삼각형" class="st0">
+	<polygon class="st2" points="-0.2,363.4 886.8,774 958.7,552.6 	"/>
+</g>
+<g id="레이어_3">
+	<g id="Bottom">
+		<path d="M122.6,420.2c-15-6.9-23.1,0.2-18,15.9l124.9,384.3c5.1,15.7,22.8,28.5,39.3,28.5h419.6c16.5,0,34.2-12.8,39.3-28.5
+			l24.7-75.9c5.1-15.7-3-34.2-18-41.1L122.6,420.2z"/>
+	</g>
+	<g id="Top">
+		<path d="M502.8,128.6c-13.3-9.7-35.2-9.7-48.5,0L127.4,366.1c-13.3,9.7-11,20.2,5.2,23.4l661.4,130.5c16.2,3.2,33.6-7,38.7-22.7
+			l24.7-75.9c5.1-15.7-1.7-36.5-15-46.2L502.8,128.6z"/>
+	</g>
+</g>
+</svg>
