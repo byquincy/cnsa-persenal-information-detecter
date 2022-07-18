@@ -45,13 +45,14 @@
         <nav>
         </nav>
     </header>
-    <div id="notice">
-        dfsfsdfsfs<br>dsfdfsdf<br>dfsfdsf
+    <div id="notice" style="z-index: -1;">
+        <span id="errorNotice">이것은 오류이다. 이런..</span>
+        <button onclick="backPostInput()" id="backPostInput">돌아가기</button>
     </div>
 
     <div id="container">
         <div id="input">
-            <textarea name="text-box" placeholder="게시글을 입력해주세요." required autofocus></textarea>
+            <textarea name="text-box" id="post" placeholder="게시글을 입력해주세요." required autofocus></textarea>
             <button id="submit" onclick="runApp()">제출</button>
         </div>
     </div>

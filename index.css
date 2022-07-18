@@ -90,8 +90,6 @@ button:hover {
     justify-content: center;
     align-items: center;
 
-    z-index: -1;
-
     transition-property: opacity;
     transition-duration: 200ms;
 }
