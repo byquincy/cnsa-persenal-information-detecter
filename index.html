@@ -46,7 +46,10 @@
         </nav>
     </header>
     <div id="notice" style="z-index: -1;">
-        <span id="errorNotice">이것은 오류이다. 이런..</span>
+        <div class="errorBar">사용자의 정보가 포함되어 있습니다. 확인이 필요합니다.</div>
+        <div class="errorBar">사용자의 중요 정보가 포함되어 있습니다. 주의가 필요합니다.</div>
+        <div class="errorBar">매우 위험. 사용자의 심각한 정보가 포함되어 있습니다. 경고가 필요합니다.</div>
+        <div id="errorNotice"></div>
         <button onclick="backPostInput()" id="backPostInput">돌아가기</button>
     </div>
 

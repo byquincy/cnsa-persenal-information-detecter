@@ -17,16 +17,16 @@ function runApp(){
    let markTag = {
     // 일반 정보
     // #ffa0a0
-    1: "<span style=\"color: #8f8f8f\">",
-    2: "</span>",
+    1: "<b><span style=\"color: #8f8f8f\">",
+    2: "</span></b>",
 
     // 중요 정보
-    11: "<span style=\"color: #ffa0a0\">",
-    12: "</span>",
+    11: "<b><span style=\"color: #ffa0a0\">",
+    12: "</span></b>",
 
     // 위험 정보
-    21: "<span style=\"color: #ff1414\">",
-    22: "</span>",
+    21: "<b><span style=\"color: #ff1414\">",
+    22: "</span></b>",
    }
     // 정보 찾기
 
@@ -34,14 +34,19 @@ function runApp(){
     email = findByExpression(post, /[\w\.=-]+@[\w\.-]+\.[\w]{2,3}/g, 1, 2)
 
     // 중요 정보
-    password = overlapDelete(findByExpression(post, /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}/g, 11, 12), email)
     phoneNumber = findByExpression(post, /01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})/g, 11, 12)
+    masterCardNumber = findByExpression(post, /(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}/g, 11, 12)
+    ameracanExpressCardNumber = findByExpression(post, /3[47][0-9]{13/g, 11, 12)
+    koreanCardNumber = findByExpression(post, /9[0-9]{15}/g, 11, 12)
+    visaCardNumber = findByExpression(post, /4[0-9]{12}(?:[0-9]{3})?/g, 11, 12)
+    visaMasterCardNumber = findByExpression(post, /(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})/g, 11, 12)
 
     // 위험 정보
     nationalIDnumber = findByExpression(post, /\d{2}([0]\d|[1][0-2])([0][1-9]|[1-2]\d|[3][0-1])[-]*[1-4]\d{6}/g, 21, 22)
     adressIP = findByExpression(post, /\d{1,3}[.]\d{1,3}[.]\d{1,3}[.]\d{1,3}/g, 21, 22)
+    password = overlapDelete(findByExpression(post, /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}/g, 21, 22), email)
 
-    information = [...email, ...password, ...phoneNumber, ...nationalIDnumber, ...adressIP]
+    information = [...email, ...password, ...phoneNumber, ...masterCardNumber, ...ameracanExpressCardNumber, ...koreanCardNumber, ...visaCardNumber, ...visaMasterCardNumber, ...nationalIDnumber, ...adressIP]
 
     information.sort(function (a1, a2) {
         a1[0] = parseInt(a1[0]);

@@ -52,6 +52,24 @@ button:hover {
                 -10px -10px 15px #ffffff;
 }
 
+.errorBar {
+    width: 30%;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+
+    border-radius: 1vh;
+    background: #e6e6eb;
+}
+
 #container {
     height: calc(90vh - 4vw);
     width: 100%;
@@ -85,6 +103,7 @@ button:hover {
     right: 0;
 
     display: flex;
+    flex-direction: column;
     opacity: 0%;
 
     justify-content: center;
@@ -92,4 +111,18 @@ button:hover {
 
     transition-property: opacity;
     transition-duration: 200ms;
+}
+
+#errorNotice {
+    width: calc(30% - 2vh);
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    
+    border-radius: 1vh;
+    background: #e6e6eb;
+    
+    margin: 1%;
+    padding: 1vh;
 }
